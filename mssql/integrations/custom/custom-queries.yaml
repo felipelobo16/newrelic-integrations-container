@@ -1,0 +1,11 @@
+queries:
+    # Example for metric_name / metric_type specified in this config
+  - query: SELECT count(*) AS 'metric_value' FROM sys.databases  ## test
+    metric_name: dbCount_lobo
+    metric_type: gauge
+
+  #- query: SELECT FirstName FROM dev.dbo.Customer where Country = 'Brazil'
+  #  database:
+
+  - query: SELECT FirstName,Phone FROM Customer where Country = 'Brazil' ## test
+    database: dev

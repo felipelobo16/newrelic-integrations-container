@@ -1,0 +1,12 @@
+integrations:
+  - name: nri-mssql
+    env:
+      METRICS: true
+      HOSTNAME: hostname
+      PORT: 1433
+      USERNAME: username
+      PASSWORD: password
+      CUSTOM_METRICS_CONFIG: '/etc/newrelic-infra/integrations.d/custom/custom-queries.yaml'
+    interval: 15s
+    labels:
+      environment: production
