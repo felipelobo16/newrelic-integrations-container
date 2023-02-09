@@ -14,7 +14,7 @@
 
 2) Build and Run:
 
-- Buildar e Rodar o container na mesma rede que o banco MSSQL se encontra.
+- Buildar e Rodar o container com acesso a rede do banco.
 
 
 3) Tabelas na New Relic.
